@@ -1,0 +1,60 @@
+.movie-list{
+    color: red;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+.place-name{
+    color: blueviolet;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+.table-head{
+    color: brown;
+    font-size: xx-large;
+    
+}
+.navbar{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    width: 100%;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    
+        }
+        .movie-list{
+            color: aquamarine;
+            font-weight: 1000;
+        }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 500px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 800px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
